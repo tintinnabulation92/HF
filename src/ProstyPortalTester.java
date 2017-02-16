@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class ProstyPortalTester {
 
@@ -8,8 +9,13 @@ public class ProstyPortalTester {
 		//ProstyPortal portal1 = new ProstyPortal();
 		Portal newPortal = new Portal();
 		
+		ArrayList<String> lista1 = new ArrayList<String>();
+		lista1.add("9");
+		lista1.add("8");
+		lista1.add("7");
 		//portal1.setPolaPolozenia();
 		Pomocnik pomocnik = new Pomocnik(); 
+		newPortal.setPolaPolozenia(lista1);
 		/*
 		int losowaLiczba = (int) (Math.random()*5);
 		int[] losoweLiczby = new int[3];
@@ -26,8 +32,8 @@ public class ProstyPortalTester {
 			while (czyIstnieje == true){
 				String pole = pomocnik.pobierzDaneWejsciowe("Podaj Liczbe");
 				
-				//tu gdzies jest bld jakas zmienna jest niezainicjowanasa
-				String wynik = newPortal.sprawdz(pole); //null pointer jako 2 blad
+				
+				String wynik = newPortal.sprawdz(pole); 
 				
 				iloscRuchow++;
 				
