@@ -1,8 +1,9 @@
 
 public class ProstyPortal {
-
+/*
 	private int [] polePolozenia;
 	private int iloscTrafien;
+	
 	
 	String sprawdz(String pole){
 		
@@ -11,9 +12,14 @@ public class ProstyPortal {
 		for (int x : polePolozenia){
 			if(x == pole1){
 				wynik = "trafiony";
+				
+				
+				
 				iloscTrafien++;
 				break;
 			}
+			
+			
 		}
 		
 		if (iloscTrafien == 3){
@@ -27,5 +33,5 @@ public class ProstyPortal {
 	public void setPolaPolozenia(int[] ppol){
 		
 		this.polePolozenia = ppol;
-	}
+	}*/
 }

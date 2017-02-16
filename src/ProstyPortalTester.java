@@ -5,21 +5,29 @@ public class ProstyPortalTester {
 		// TODO Auto-generated method stub
 
 		int iloscRuchow = 0;
-		ProstyPortal portal1 = new ProstyPortal();
-		Pomocnik pomocnik = new Pomocnik();
+		//ProstyPortal portal1 = new ProstyPortal();
+		Portal newPortal = new Portal();
+		
+		//portal1.setPolaPolozenia();
+		Pomocnik pomocnik = new Pomocnik(); 
+		/*
 		int losowaLiczba = (int) (Math.random()*5);
 		int[] losoweLiczby = new int[3];
 		losoweLiczby[0] = losowaLiczba;
 		losoweLiczby[1] = ++losowaLiczba;
 		losoweLiczby[2] = ++losowaLiczba;
+		*/
+		 
 		
-		portal1.setPolaPolozenia(losoweLiczby);
+		
+		//portal1.setPolaPolozenia(losoweLiczby);
 		boolean czyIstnieje = true;
 		
 			while (czyIstnieje == true){
 				String pole = pomocnik.pobierzDaneWejsciowe("Podaj Liczbe");
 				
-				String wynik = portal1.sprawdz(pole);
+				//tu gdzies jest bld jakas zmienna jest niezainicjowanasa
+				String wynik = newPortal.sprawdz(pole); //null pointer jako 2 blad
 				
 				iloscRuchow++;
 				
